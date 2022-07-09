@@ -5,13 +5,30 @@ body {
     font-family: "Poppins";
 }
 
-.welcome {
+.welcome1 {
     width: 94vw;
     height: 94vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 200px;
+    font-size: 180px;
     font-weight: 700;
-    line-height: 170px;
+    line-height: 1;
+}
+
+@media screen and (max-width: 600px) {
+    div.welcome1 {
+      font-size: 90px;
+    }
+  }
+
+.welcome2 {
+    width: 94vw;
+    height: 94vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 180px;
+    font-weight: 700;
+    line-height: 1;
 }
