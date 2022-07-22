@@ -1,8 +1,11 @@
-
-body {
+* {
     background-color: #f7f7f7;
-    color: #0a0a0a;
     font-family: "Poppins";
+}
+
+.welcome {
+    font-size: 80px;
+    line-height: 1;
 }
 
 .welcome1 {
@@ -11,16 +14,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 180px;
-    font-weight: 700;
-    line-height: 1;
 }
-
-@media screen and (max-width: 600px) {
-    div.welcome1 {
-      font-size: 90px;
-    }
-  }
 
 .welcome2 {
     width: 94vw;
@@ -28,7 +22,142 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 180px;
-    font-weight: 700;
-    line-height: 1;
 }
+
+@media screen and (max-width: 600px) {
+    div.welcome {
+      font-size: 32px;
+    }
+}
+
+.main {
+    padding: 2%;
+    animation-name: mainanim;
+    animation-duration: 4s;
+    animation-delay: 2s;
+    display: none;
+}
+
+@keyframes mainanim {
+    from {display: none;}
+    to {display: block;}
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 1;
+    padding-right: 80%;
+}
+
+.menu {
+    width: 94vw;
+    height: 94vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero {
+    margin: 4%;
+    text-align: center;
+}
+
+.hero-img {
+    height: 50%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.about {
+    font-size: 32px;
+    margin: 4%;
+}
+
+@media screen and (max-width: 600px) {
+    div.about {
+      font-size: 24px;
+    }
+}
+
+.about-border {
+    font-size: 24px;
+    text-align: center;
+}
+
+.works-border {
+    font-size: 24px;
+    text-align: center;
+}
+
+.rate {
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+.rate-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rateimg {
+    height: auto;
+    width: 90%;
+    border: 4px solid #000000;
+    border-radius: 30px;
+}
+
+.rate-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4%;
+}
+
+.rate-text {
+    width: 50%;
+    margin: 2%;
+}
+
+.rate-header {
+    color: #FFAC60;
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.rate-button-column {
+    width: 50%;
+    margin: 2%;
+}
+
+button {
+    background: #FFAC60;
+    padding: 10px 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    border: 4px solid #000000;
+    border-radius: 79px;
+}
+
+button:hover {
+    background: #FFAC60;
+    padding: 10px 20px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 17px;
+    border: 4px solid #000000;
+    border-radius: 79px;
+    box-shadow: 4px -4px 0px #000000;
+}
+
